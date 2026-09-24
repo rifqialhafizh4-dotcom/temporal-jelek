@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selamat Ulang Tahun — Album Kenangan</title>
+<meta name="description" content="Ucapan ulang tahun dari album kenangan.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2230%22 fill=%22%23b98a4e%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="page-veil" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Album Kenangan</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="gallery.html">Galeri</a></li>
+      <li><a href="about.html" aria-current="page">Ucapan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="bday" id="bday" data-nama="" data-dari="">
+  <div class="light-dust" data-count="26" aria-hidden="true"></div>
+  <div class="bunting" id="bunting" aria-hidden="true"></div>
+
+  <div class="wrap bday-hero">
+    <p class="eyebrow-line bday-kicker">Sebuah ucapan kecil</p>
+    <h1 class="bday-title">Selamat<br><em>Ulang Tahun</em></h1>
+    <p class="bday-name" id="bday-name">untuk kamu yang istimewa</p>
+
+    <div class="cake-stage">
+      <svg class="cake" id="cake" viewBox="0 0 320 300" role="img" aria-label="Kue ulang tahun dengan satu lilin">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd58a" stop-opacity=".85"/><stop offset="1" stop-color="#ffd58a" stop-opacity="0"/></radialGradient>
+          <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e2823a"/><stop offset=".6" stop-color="#ffc766"/><stop offset="1" stop-color="#fff3c8"/></linearGradient>
+        </defs>
+        <ellipse cx="160" cy="272" rx="140" ry="14" fill="#efe7da" opacity=".95"/>
+        <rect x="52" y="196" width="216" height="72" rx="10" fill="#a15c43"/>
+        <rect x="76" y="132" width="168" height="70" rx="10" fill="#b98a4e"/>
+        <path d="M76 142c14 0 14 16 28 16s14-16 28-16 14 16 28 16 14-16 28-16 14 16 28 16 14-16 28-16v-4a10 10 0 0 0-10-10H86a10 10 0 0 0-10 10z" fill="#efe7da"/>
+        <path d="M52 208a10 10 0 0 1 10-12h196a10 10 0 0 1 10 12c-18 0-18 16-36 16s-18-16-36-16-18 16-36 16-18-16-36-16-18 16-36 16-18-16-36-16z" fill="#efe7da" opacity=".95"/>
+        <g fill="#6b7a5c"><circle cx="112" cy="232" r="5"/><circle cx="160" cy="236" r="5"/><circle cx="208" cy="232" r="5"/><circle cx="136" cy="168" r="4"/><circle cx="184" cy="168" r="4"/></g>
+        <rect x="153" y="88" width="14" height="44" rx="3" fill="#efe7da"/>
+        <path d="M153 100l14 6M153 112l14 6M153 124l14 6" stroke="#a15c43" stroke-width="3" opacity=".7"/>
+        <circle class="flame-glow" cx="160" cy="68" r="52" fill="url(#glow)"/>
+        <path class="flame" d="M160 42c10 14 14 22 14 32a14 14 0 0 1-28 0c0-8 5-14 8-20 2 6 6 8 6-12z" fill="url(#flame)"/>
+        <path class="smoke" d="M160 80c-8-14 10-22 0-38s8-22 0-34" fill="none" stroke="#efe7da" stroke-width="3" stroke-linecap="round" opacity="0"/>
+      </svg>
+      <button class="btn btn-solid blow-btn" id="blow">Tiup lilinnya ✦</button>
+      <p class="blow-hint small" id="blow-hint">Buat satu permintaan dulu, lalu tiup.</p>
+    </div>
+  </div>
+</section>
+
+<section class="letter-sec">
+  <div class="wrap letter-grid">
+    <article class="letter reveal">
+      <div class="eyebrow-line">Untukmu</div>
+      <p class="letter-open" id="letter-open">Halo, selamat ulang tahun!</p>
+      <p>Hari ini sepenuhnya milikmu. Terima kasih sudah menjadi bagian dari cerita-cerita di album ini — setiap foto terasa lebih berarti karena ada kamu di dalamnya, entah di depan kamera atau sekadar di balik momen itu.</p>
+      <p>Semoga tahun yang baru dipenuhi kesehatan, tawa yang gampang datang, dan hal-hal baik yang tiba tanpa perlu diminta. Semoga kamu selalu dikelilingi orang-orang yang membuatmu merasa pulang.</p>
+      <p class="letter-sign" id="letter-sign">Dengan sayang ♡</p>
+    </article>
+
+    <ul class="wishes reveal-stagger">
+      <li><span class="wish-n">01</span><div><h3>Sehat selalu</h3><p>Badan kuat, hati ringan, tidur nyenyak.</p></div></li>
+      <li><span class="wish-n">02</span><div><h3>Bahagia yang sederhana</h3><p>Kopi hangat, obrolan panjang, sore yang tenang.</p></div></li>
+      <li><span class="wish-n">03</span><div><h3>Mimpi yang terwujud</h3><p>Satu per satu, pada waktu yang paling tepat.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="moments">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow-line">Dari album</div>
+      <h2 class="section-title">Beberapa momen yang selalu diingat</h2>
+    </div>
+    <div class="polaroids" id="polaroids"><div class="polaroid is-skeleton"><div class="photo skeleton"></div></div></div>
+    <div class="moments-cta reveal"><a href="gallery.html" class="btn">Lihat semua foto →</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p class="small">Album Kenangan — dibuat untuk diisi dengan ceritamu sendiri.</p>
+    <div class="footer-links">
+      <a href="index.html">Beranda</a>
+      <a href="gallery.html">Galeri</a>
+    </div>
+  </div>
+</footer>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script src="js/main.js"></script>
+<script src="js/photo-engine.js"></script>
+<script src="js/birthday.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album Kenangan</title>
+<meta name="description" content="Album foto pribadi — kumpulan momen yang ingin selalu diingat.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2230%22 fill=%22%23b98a4e%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="page-veil" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Album Kenangan</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Beranda</a></li>
+      <li><a href="gallery.html">Galeri</a></li>
+      <li><a href="about.html">Ucapan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="light-dust" data-count="18" aria-hidden="true"></div>
+
+  <div class="hero-frame-wrap">
+    <div class="hero-copy">
+      <p class="hero-kicker eyebrow-line">FOTO 01 DARI SEKIAN BANYAK</p>
+      <h1 class="hero-title display-1">Album<br>Kenangan</h1>
+      <p class="hero-lede lede" style="margin-top:1.4rem; max-width:36ch;">Tempat menyimpan momen-momen yang tidak ingin dilupakan — perjalanan, keluarga, dan hal-hal kecil sehari-hari.</p>
+      <div class="hero-cta hero-cta-row">
+        <a href="gallery.html" class="btn btn-solid">Lihat semua foto →</a>
+        <a href="about.html" class="btn">Ucapan untukmu</a>
+      </div>
+    </div>
+
+    <figure class="hero-frame">
+      <div class="picture-light" aria-hidden="true"></div>
+      <div class="photo hero-stage" id="hero-stage"><div class="skeleton"></div></div>
+      <figcaption class="hero-plate">
+        <span class="num" id="hero-num">No. --</span>
+        <span class="cap" id="hero-cap">Memuat foto…</span>
+      </figcaption>
+      <div class="hero-dots" id="hero-dots"></div>
+    </figure>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div class="reveal">
+      <div class="eyebrow-line">Ucapan untukmu</div>
+      <h2 class="section-title">Bukan sekadar folder foto</h2>
+      <p>Semua foto di sini datang langsung dari API, jadi album selalu mengikuti data terbaru tanpa perlu menyalin file satu per satu. Foto yang punya bingkai hitam di tepinya dipotong otomatis supaya tampil bersih dan penuh.</p>
+      <div class="stat-row">
+        <div><span class="num" id="stat-cats">3</span><span class="lab">KATEGORI ALBUM</span></div>
+        <div><span class="num" id="stat-total">50</span><span class="lab">FOTO TERSIMPAN</span></div>
+        <div><span class="num">100%</span><span class="lab">RESPONSIVE</span></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.1s;">
+      <div class="howto-card">
+        <div class="eyebrow-line" style="margin-bottom:1.2rem;">Cara kerja singkat</div>
+        <ol>
+          <li>Daftar foto dan kategorinya diambil dari API (<code>temple.json</code>) setiap halaman dibuka.</li>
+          <li>Setiap foto dianalisis di browser: area hitam di tepinya dipotong otomatis, tanpa mengubah file aslinya.</li>
+          <li>Tambah atau ubah foto cukup lewat data API — galeri dan beranda ikut berubah sendiri.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="wrap">
+    <div class="featured-header reveal">
+      <div>
+        <div class="eyebrow-line">Pilihan</div>
+        <h2 class="section-title">Beberapa momen belakangan ini</h2>
+      </div>
+      <div class="track-ctrl">
+        <button class="track-nav" data-dir="-1" aria-label="Geser ke kiri">←</button>
+        <button class="track-nav" data-dir="1" aria-label="Geser ke kanan">→</button>
+        <a href="gallery.html" class="btn">Buka galeri lengkap →</a>
+      </div>
+    </div>
+    <div class="featured-track reveal" id="featured-track" style="transition-delay:.08s;">
+      <div class="featured-card is-skeleton"><div class="photo skeleton"></div></div>
+      <div class="featured-card is-skeleton"><div class="photo skeleton"></div></div>
+      <div class="featured-card is-skeleton"><div class="photo skeleton"></div></div>
+      <div class="featured-card is-skeleton"><div class="photo skeleton"></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p class="small">Album Kenangan — dibuat untuk diisi dengan ceritamu sendiri.</p>
+    <div class="footer-links">
+      <a href="gallery.html">Galeri</a>
+      <a href="about.html">Ucapan</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/photo-engine.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

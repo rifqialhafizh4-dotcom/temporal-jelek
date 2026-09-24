@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri — Album Kenangan</title>
+<meta name="description" content="Semua foto dalam album, dikelompokkan per kategori.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2230%22 fill=%22%23b98a4e%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="page-veil" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Album Kenangan</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="gallery.html" aria-current="page">Galeri</a></li>
+      <li><a href="about.html">Ucapan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header style="padding-top: calc(var(--nav-h) + clamp(2.5rem, 6vw, 4.5rem)); padding-bottom: 1rem;">
+  <div class="wrap">
+    <div class="eyebrow-line">Semua foto</div>
+    <h1 class="display-2">Galeri</h1>
+    <p class="lede" style="margin-top:1rem;">Foto diambil langsung dari API. Area hitam di tepi foto dipotong otomatis — klik foto untuk memperbesar.</p>
+    <div class="api-status" id="api-status" aria-live="polite"><span class="dot"></span>Menghubungkan ke API…</div>
+
+    <div class="filter-bar" role="tablist" aria-label="Filter kategori"></div>
+  </div>
+</header>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="masonry" id="gallery-grid"></div>
+    <div id="sentinel" class="sentinel" aria-hidden="true"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p class="small">Album Kenangan — dibuat untuk diisi dengan ceritamu sendiri.</p>
+    <div class="footer-links">
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Ucapan</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Penampil foto">
+  <button class="lightbox-nav lightbox-prev" aria-label="Foto sebelumnya">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 2L4 8l6 6" stroke="currentColor" stroke-width="1.6"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-next" aria-label="Foto berikutnya">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 2l6 6-6 6" stroke="currentColor" stroke-width="1.6"/></svg>
+  </button>
+  <button class="lightbox-close" aria-label="Tutup">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 1l14 14M15 1L1 15" stroke="currentColor" stroke-width="1.5"/></svg>
+  </button>
+  <figure class="lightbox-card">
+    <div class="photo"><img src="" alt=""><div class="lb-loader" aria-hidden="true"></div></div>
+    <figcaption><span class="cap-text"></span><span class="cap-counter small"></span></figcaption>
+  </figure>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/photo-engine.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
